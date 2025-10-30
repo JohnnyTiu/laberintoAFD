@@ -1,3 +1,4 @@
+// creacion de variables globales
 var rocaImg;
 var puntoImg;
 var rocas = [];
@@ -5,20 +6,22 @@ var puntos = [];
 var plat;
 var tileSize = 50;
 
+// precarga de imagenes
 function preload() {
+  // Cargar imagen de roca (muro)
   rocaImg = loadImage(
     'assets/roca.png',
     () => console.log('✅ roca cargada'),
     () => console.log('❌ ERROR cargando roca')
   );
-
+  // Cargar imagen de punto (café)
   puntoImg = loadImage(
     'assets/cafe.jpg',
     () => console.log('✅ punto cargado'),
     () => console.log('❌ ERROR cargando punto')
   );
 }
-
+// configuracion inicial
 function setup() {
   let canvas = createCanvas(1000, 600);
   canvas.parent('contenedor');
@@ -43,7 +46,7 @@ function setup() {
     }
   }
 }
-
+// bucle principal
 function draw() {
   background(0);
 

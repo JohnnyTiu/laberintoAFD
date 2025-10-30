@@ -1,3 +1,4 @@
+// Definición de la clase Plataforma
 function Plataforma() {
   this.filas = 12;
   this.columnas = 20;

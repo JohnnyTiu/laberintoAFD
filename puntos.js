@@ -1,7 +1,8 @@
+// definición de la clase Punto (objeto recolectable)
 function Punto(x, y) {
   this.x = x;
   this.y = y;
-
+  // metodo para mostrar el punto
   this.show = function() {
     if (puntoImg) {
       image(puntoImg, this.x, this.y, 50, 50);
