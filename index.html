@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laberinto</title>
+  <link rel="icon" href="assets/icono.png">
+  <style>
+    /* Centra todo el contenido */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222;
+    }
+
+    /* Marco contenedor */
+    #contenedor {
+      width: 1000px;
+      height: 600px;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    canvas {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      border: 2px solid #555;
+    }
+
+    @media (max-width: 1000px) {
+      #contenedor {
+        width: 90vw;
+        height: auto;
+        aspect-ratio: 5/3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="contenedor"></div>
+
+  <!-- Librerías y scripts -->
+  <script src="p5.js"></script>
+  <script src="muro.js"></script>
+  <script src="puntos.js"></script>
+  <script src="plataforma.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
